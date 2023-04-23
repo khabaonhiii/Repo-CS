@@ -33,31 +33,6 @@ export default katalon.testCase("New Test Case", async ({ local, web }) => {
   });
   await web.click({
     type: "Web",
-    id: "570a818f-4fde-477c-9c34-79951e0b0cf8",
-    attributes: { class: "input-group" },
-    childIndex: 1,
-    hashes: {},
-    name: "div - input-group",
-    selectors: [
-      {
-        id: "98d02f95-9c4b-4e19-90cf-88f458bd69d6",
-        type: "CSS",
-        value: ".form-group:nth-child(1) .input-group",
-        isDefault: true,
-      },
-      {
-        id: "de2848c4-83cd-42b2-b3a2-a35dbcd06c92",
-        type: "Attribute",
-        isDefault: true,
-      },
-    ],
-    selectorType: "CSS",
-    tag: "div",
-    text: "\t",
-    pageUrl: "https://katalon-demo-cura.herokuapp.com/profile.php#login",
-  });
-  await web.click({
-    type: "Web",
     id: "71b79cde-0000-4f9c-a0ed-5d0a01d504c4",
     attributes: {
       type: "text",
