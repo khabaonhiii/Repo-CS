@@ -3,68 +3,6 @@ import katalon from "katalon";
 export default katalon.testCase("New Test Case", async ({ local, web }) => {
   await new Promise((r) => setTimeout(r, 0));
   await web.openBrowser("https://katalon-demo-cura.herokuapp.com");
-  await web.click({
-    type: "Web",
-    id: "99b1b144-c738-4f17-9c57-45c2287b1a88",
-    attributes: {
-      id: "btn-make-appointment",
-      href: "./profile.php#login",
-      class: "btn btn-dark btn-lg",
-    },
-    childIndex: 4,
-    hashes: {},
-    name: "a - Make Appointment",
-    selectors: [
-      {
-        id: "5f19debb-deb4-451d-85ef-a78f4b9a7706",
-        type: "CSS",
-        value: "#btn-make-appointment",
-        isDefault: true,
-      },
-      {
-        id: "5887a885-2143-4b6d-895e-38c99da301d9",
-        type: "Attribute",
-        isDefault: true,
-      },
-    ],
-    selectorType: "CSS",
-    tag: "a",
-    text: "Make Appointment",
-    pageUrl: "https://katalon-demo-cura.herokuapp.com/",
-  });
-  await web.click({
-    type: "Web",
-    id: "b38113f7-6fff-4f41-9d0b-d187ba2c3d1f",
-    attributes: {
-      type: "text",
-      class: "form-control",
-      id: "txt-username",
-      name: "username",
-      placeholder: "Username",
-      value: "",
-      autocomplete: "off",
-    },
-    childIndex: 1,
-    hashes: {},
-    name: "input - Username",
-    selectors: [
-      {
-        id: "a45713d8-c1db-4f17-ab51-5721b6dda95f",
-        type: "CSS",
-        value: "#txt-username",
-        isDefault: true,
-      },
-      {
-        id: "bfdb10f9-5881-4a23-aa75-707629876f57",
-        type: "Attribute",
-        isDefault: true,
-      },
-    ],
-    selectorType: "CSS",
-    tag: "input",
-    text: "",
-    pageUrl: "https://katalon-demo-cura.herokuapp.com/profile.php#login",
-  });
   await web.setText(
     {
       type: "Web",
