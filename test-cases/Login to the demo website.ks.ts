@@ -72,40 +72,4 @@ export default katalon.testCase("New Test Case", async ({ local, web }) => {
     text: "",
     pageUrl: "https://katalon-demo-cura.herokuapp.com/profile.php#login",
   });
-  await web.setEncryptedText(
-    {
-      type: "Web",
-      id: "5e9b0ecd-809f-4e44-a4e0-c7b7e905a8d6",
-      attributes: {
-        type: "password",
-        class: "form-control",
-        id: "txt-password",
-        name: "password",
-        placeholder: "Password",
-        value: "",
-        autocomplete: "off",
-      },
-      childIndex: 1,
-      hashes: {},
-      name: "input - Password",
-      selectors: [
-        {
-          id: "4c1107e4-4b5b-4d79-987b-67daa4268120",
-          type: "CSS",
-          value: "#txt-password",
-          isDefault: true,
-        },
-        {
-          id: "2e7d2159-13ce-4bb0-bbde-7f659b211638",
-          type: "Attribute",
-          isDefault: true,
-        },
-      ],
-      selectorType: "CSS",
-      tag: "input",
-      text: "",
-      pageUrl: "https://katalon-demo-cura.herokuapp.com/profile.php#login",
-    },
-    "f2dd79c41acfa4b283d8b489dcb0bd1b-U2FsdGVkX18kHL85mdpQYlDq49us320bXBF6Ja1Ob6t0Dt4Vmc1TvoS9SiRvJolN"
-  );
 });
