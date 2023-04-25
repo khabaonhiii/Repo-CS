@@ -108,29 +108,4 @@ export default katalon.testCase("New Test Case", async ({ local, web }) => {
     },
     "f2dd79c41acfa4b283d8b489dcb0bd1b-U2FsdGVkX18kHL85mdpQYlDq49us320bXBF6Ja1Ob6t0Dt4Vmc1TvoS9SiRvJolN"
   );
-  await web.click({
-    type: "Web",
-    id: "389b23eb-932c-49ba-adc7-f518b14301ee",
-    attributes: { id: "btn-login", type: "submit", class: "btn btn-default" },
-    childIndex: 1,
-    hashes: {},
-    name: "button - Login",
-    selectors: [
-      {
-        id: "c9417bb8-cbc6-419f-bfaa-1d88c0b249e1",
-        type: "CSS",
-        value: "#btn-login",
-        isDefault: true,
-      },
-      {
-        id: "d7908942-9925-48e4-a3c8-2225114c6670",
-        type: "Attribute",
-        isDefault: true,
-      },
-    ],
-    selectorType: "CSS",
-    tag: "button",
-    text: "Login",
-    pageUrl: "https://katalon-demo-cura.herokuapp.com/profile.php#login",
-  });
 });
